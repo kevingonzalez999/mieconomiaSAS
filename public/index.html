@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MIEconomiaSAS</title>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet"></a>
+    <a href="./css/sweetalert2.min.css"></a>
+    <title>Login</title>
 </head>
-<body>
-    
+<body class="flex min-h-screen flex-col items-center justify-center bg-yellow-300">
+    <!-- Formulario de login -->
+    <h1 class="ml-35 text-xl mt-10 text-center font-medium text-gray-900 dark:text-black-700">MI ECONOMIA S.A.S</h1>
+    <div class="w-full max-w-sm mt-10 p-4 border border-gray-200 rounded-lg shadow-sm sm:p-6 md:p-8 bg-pink-600 border-gray-700">
+        <form class="space-y-8 space-x-15">
+            <div class="mb-5">
+                <label for="email-alternative" class="block mb-2.5 text-sm font-medium text-heading">Usuario:</label>
+                <input type="email" id="email-alternative" class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow placeholder:text-body" placeholder="kevin123" required />
+            </div>
+            <div class="mb-5">
+                <label for="password-alternative" class="block mb-2.5 text-sm font-medium text-heading">Contraseña</label>
+                <input type="password" id="password-alternative" class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow placeholder:text-body" placeholder="••••••••" required />
+            </div>
+            <div class="flex items-start mb-5">
+                <label for="remember-alternative" class="flex items-center h-5">
+                <input id="remember-alternative" type="checkbox" value="" class="w-4 h-4 border border-default-medium rounded-xs bg-neutral-secondary-medium focus:ring-2 focus:ring-brand-soft" required />
+                <p class="ms-2 text-sm font-medium text-heading select-none">Acepto terminos y condiciones<a href="#" class="text-fg-brand hover:underline"></a></p>
+                </label>
+            </div>
+            <div>
+                <button type="submit" class="text-black bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-transparent focus:border-pink-700 shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Ingresar</button>
+            </div>
+            <div>
+                <a href="" class="space-y-4 px-4 py-2.5 items-center font-medium text-black hover:underline">¿No estas registrado? Crea una cuenta</a>
+            </div>
+        </form>
+    </div>
+    <script src="./js/flowbite.min.js"></script>
+    <script src="./js/sweetalert2.all.min.js"></script>
 </body>
 </html>
